@@ -1,1172 +1,203 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
     <title>MingoPack</title>
-    <link rel="image_src" href="assets/img/home.png" />
-    <link rel="apple-touch-icon" sizes="256x256" href="assets/img/favicon-32x32.png" />
-    <link rel="icon" sizes="256x256" href="assets/img/favicon-32x32.png" />
-    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" />
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
-    <header class="bg-light-blue py-lg-5 py-4">
-        <div class="container">
-            <div class="row justify-content-between align-items-lg-start align-items-xl-center">
-                <div class="col-4 col-lg-3 col-xl-2 col-xxl-3 pe-0 pe-xxl-5 py-2"><a href="index.html#"><img
-                            src="assets/img/favicon-32x32.png" height="30px" width="30px" alt="Mingo Pack" /></a></div>
-                <div class="col">
-                    <nav class="navbar navbar-expand-lg justify-content-end navbar-light text-uppercase fs-7 fw-bold">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <div class="row w-100">
-                                <div class="col-lg">
-                                    <ul class="navbar-nav text-nowrap h-100 align-items-center justify-content-end">
-                                        <li class="nav-item"><a class="nav-link ps-1" href="index.html#home">Home</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link ps-1" href="index.html#about">About</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link ps-1"
-                                                href="index.html#features">Features</a></li>
-                                        <li class="nav-item"><a class="nav-link ps-1"
-                                                href="index.html#roadmap">Roadmap</a></li>
-                                        <li class="nav-item"><a class="nav-link ps-1"
-                                                href="index.html#community">Community</a></li>
-                                        <li class="nav-item"><a class="nav-link ps-1" href="index.html#team">Team</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link ps-1" href="index.html#faq">FAQ</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link ps-1 newbies" href="#">How to buy
-                                                NFT?</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg px-0">
-                                    <div class="row justify-content-end align-items-center">
-                                        <div class="col-lg-auto text-nowrap text-center ps-0"><a
-                                                href="https://discord.gg/A9CnsVzzkZ" target="_blank"
-                                                class="btn btn-icon" rel="noreferrer"><i
-                                                    class="icon icon-discord fs-4"></i></a><a
-                                                href="https://twitter.com/codeSTACKr" target="_blank"
-                                                class="btn btn-icon" rel="noreferrer"><i
-                                                    class="icon icon-twitter fs-4"></i>
-                                                <a href="https://opensea.io/collection/codecats" rel="noreferrer"
-                                                    target="_blank" class="btn btn-icon"><i
-                                                        class="icon icon-opensea fs-4"></i></a></div>
-                                        <div class="col-lg-3 col-xl-6 text-center text-lg-end px-0 mt-2 mt-lg-0">
-                                            <button class="wallet-btn btn btn-secondary" id="connectWallet">
-                                                <span>Connect Wallet</span>
-                                              </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/x-icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/x-icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/x-icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/x-icon/site.webmanifest" />
+    <link rel="stylesheet" href="css/three-dots.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="images/x-icon/favicon-32x32.png" alt="logo" />
+          </a>
         </div>
+        <div class="menu">
+          <a
+            href="https://discord.gg/A9CnsVzzkZ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/discord.webp" alt="Discord" />
+          </a>
+          <a
+            href="https://twitter.com/codeSTACKr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/twitter.webp" alt="Twitter" />
+          </a>
+          <a
+            href="https://opensea.io/collection/codecats"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/opensea.webp" alt="Opensea" />
+          </a>
+          <button class="wallet-btn btn" id="connectWallet">
+            <span>Connect Wallet</span>
+          </button>
+        </div>
+      </div>
     </header>
-    <section id="home" class="bg-light-blue py-5">
-        <div class="container py-md-5 my-xl-5">
-            <div class="ps-xl-5 pb-xl-5 mb-xxl-5">
-                <div class="row align-items-center justify-content-center justify-content-lg-start pt-5 mt-5 mt-xl-0">
-                    <div class="col-lg-5">
-                        <h1 class="mb-5">Mingo Pack</h1>
-                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, tenetur
-                            doloribus obcaecati neque fugiat commodi corrupti magni reiciendis exercitationem vitae
-                            qui nisi eaque expedita libero quas dicta nam dolore voluptatibus aliquid. Aperiam
-                            aliquam repudiandae impedit, asperiores quasi, voluptate quisquam nesciunt soluta ipsum
-                            doloremque ratione corrupti. Doloremque mollitia amet minima in molestiae nisi debitis
-                            eum ipsa, provident possimus blanditiis saepe placeat quia modi magnam commodi eius.
-                            Quidem distinctio impedit at suscipit eaque minus obcaecati unde odio cum vitae soluta
-                            qui eveniet iste dolore, quia alias culpa tenetur perspiciatis ea ducimus possimus
-                            mollitia voluptas. Harum voluptatum molestias exercitationem rem magni, aliquam totam.
-                        </p>
-                    </div>
-                    <div class="col-md-7 col-9 py-4 py-lg-0"><img src="https://via.placeholder.com/150"
-                            alt="Illustration 1" class="w-100" /></div>
-                </div>
-                <div class="pt-5 mt-0 mt-xxl-n6" id="minting">
-                    <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mt-5">
-                        <div class="bg-dark rounded-xl text-white py-3 py-sm-1 px-5">
-                            <div class="ff-andes fw-black py-4">
-                                <p class="fs-4">MINTING IS OVER! Available only on OpenSea</p><a
-                                    href="https://opensea.io/collection/codecats" target="_blank" rel="noreferrer"
-                                    class="btn btn-primary btn-red btn-lg w-100">OpenSea</a>
-                            </div>
-                        </div>
-                    </div>
-                </div><a href="#minting" class="btn btn-secondary btn-lg btn-fixed">Minting live</a>
-            </div>
-        </div>
+
+    <section class="container not-connected">
+      <div>
+        <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
+        <h1 id="welcomeH1">Welcome to the MingoPack NFT Project!</h1>
+        <p id="welcomeP">
+          The MingoPack NFT Project is a decentralized project with tons of utility to come!</p>
+      </div>
     </section>
-    <section id="about">
-        <div class="container">
-            <div class="ps-lg-5 py-5 my-5">
-                <div class="row justify-content-between align-items-start align-items-xl-center pt-xxl-5 mt-xxl-5">
-                    <div class="col-xl-5">
-                        <div class="row">
-                            <div class="col-xxl-10">
-                                <h2 class="mb-5">What is Mingo Pack about?</h2>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis veritatis voluptatibus
-                            placeat rerum! Vero necessitatibus assumenda alias provident fugit molestias illum autem
-                            vitae cupiditate, aperiam, blanditiis aut odio voluptate magni iusto nesciunt ea officia ex
-                            expedita! Iusto facere quae tenetur harum suscipit, in explicabo at quis, mollitia, commodi
-                            illo ad nesciunt. Iure perferendis consequatur illo ipsam delectus, laborum neque
-                            praesentium deleniti dolor maxime optio, omnis dignissimos et tempora sit expedita quae
-                            repellendus distinctio non sapiente cupiditate ipsum? Cum quas iste ipsam cupiditate
-                            eligendi veniam repudiandae, nihil rerum mollitia ad distinctio autem quae sit aperiam odit
-                            laudantium, expedita doloremque vitae.</p>
-                    </div>
-                    <div class="col-md-6 mt-5 mt-xl-0">
-                        <div class="border border-5 border-dark rounded-xl overflow-hidden">
-                            <div class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="2000"><img
-                                            src="https://via.placeholder.com/100" alt="About 1" class="w-100" />
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000"><img
-                                            src="https://via.placeholder.com/100" alt="About 2" class="w-100" />
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000"><img
-                                            src="https://via.placeholder.com/100" alt="About 3" class="w-100" />
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000"><img
-                                            src="https://via.placeholder.com/100" alt="About 4" class="w-100" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-12">
-                        <div class="row py-xl-5 my-5">
-                            <div class="col-xl-3 mb-3 mb-xl-0">
-                                <div class="bg-light-blue rounded-lg py-5 px-4 h-100 shadow-bottom">
-                                    <h3 class="pe-5 mb-4">2,000 NFT's</h3>
-                                    <p class="text-medium fs-7">Lorem ipsum, dolor sit amet consectetur adipisicing
-                                        elit. Quis fuga vel corrupti officiis voluptatum ipsum nisi architecto
-                                        doloremque explicabo natus aliquam, nulla, veniam laboriosam! Quo hic corporis
-                                        eligendi harum. Ipsa quos aperiam reiciendis illum quidem iure veniam?
-                                        Voluptatum laboriosam cupiditate provident totam maxime eaque facilis,
-                                        dignissimos adipisci quae quasi nemo.</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 mb-3 mb-xl-0">
-                                <div class="bg-red rounded-lg py-5 px-4 h-100 shadow-bottom">
-                                    <h3 class="pe-5 mb-4">Fair distribution</h3>
-                                    <p class="text-medium fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                        elit. Blanditiis ipsum corporis asperiores sed iusto cupiditate incidunt labore
-                                        deleniti vel iste!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 mb-3 mb-xl-0">
-                                <div class="bg-yellow rounded-lg py-5 px-4 h-100 shadow-bottom">
-                                    <h3 class="pe-5 mb-4">ERC-721 tokens</h3>
-                                    <p class="text-medium fs-7">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                        elit. Illum, amet.</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 mb-3 mb-xl-0">
-                                <div class="bg-green rounded-lg py-5 px-4 h-100 shadow-bottom">
-                                    <h3 class="pe-5 mb-4">20 per transaction</h3>
-                                    <p class="text-medium fs-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        At, nemo!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-xxl-5 mb-xxl-5 pb-lg-5">
-                    <div class="col-12">
-                        <div class="bg-blue rounded-xl shadow-bottom p-5">
-                            <div class="row align-items-center">
-                                <div class="col-sm-auto text-center">
-                                    <div class="bg-white rounded-circle w-auto d-inline-block p-2 btn-icon"><i
-                                            class="icon-discord fs-1 text-blue"></i></div>
-                                </div>
-                                <div class="col-sm col-xxl-5 pe-lg-5 pt-3 pt-sm-0">
-                                    <p class="ff-andes fs-4 fw-black lh-sm text-white mb-0">Join our Discord and
-                                        explore growing community</p>
-                                </div>
-                                <div class="col-xl col-md-auto text-center text-md-end pt-4 pt-md-0"><a href="#"
-                                        target="_blank" class="btn btn-primary btn-lg fw-bold text-blue"
-                                        rel="noreferrer">Join
-                                        Discord</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <section class="container">
+      <div class="countdown card">
+        <div id="countdown">
+          <ul class="count-down" data-date="">
+            <li class="clock-item">
+              <span class="count-number days">20</span>
+              <p class="count-text">Days</p>
+            </li>
+
+            <li class="clock-item">
+              <span class="count-number hours">20</span>
+              <p class="count-text">Hour</p>
+            </li>
+
+            <li class="clock-item">
+              <span class="count-number minutes">20</span>
+              <p class="count-text">Min</p>
+            </li>
+
+            <li class="clock-item">
+              <span class="count-number seconds">20</span>
+              <p class="count-text">Sec</p>
+            </li>
+          </ul>
+          <h2 id="subHeading">Pre-Sale Countdown</h2>
         </div>
+        <h1 id="mainHeading">Mingo Pack Drop Coming Soon!!</h1>
+        <p id="mainText">
+          A new batch of mingos will be available very soon!
+        </p>
+        <a
+          id="actionButton"
+          href="https://discord.gg/A9CnsVzzkZ"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-btn btn"
+          ><span>Join the Community</span>
+        </a>
+        <div id="mintContainer" class="mint-container hidden">
+          <div class="info-container">
+            <div>
+              <h3>Supply</h3>
+              <p id="totalSupply">100</p>
+            </div>
+            <div>
+              <h3>Price Per Mint</h3>
+              <p id="pricePerMint">1 ETH</p>
+            </div>
+            <div>
+              <h3>Max</h3>
+              <p id="maxPerMint">5 per wallet</p>
+            </div>
+          </div>
+          <div class="mint-qty">
+            <span>
+              <button class="input-number-decrement btn" id="mintDecrement">–</button>
+              <input
+                id="mintInput"
+                class="input-number btn"
+                type="number"
+                value="1"
+                min="1"
+                max="5"
+              />
+              <button class="input-number-increment btn" id="mintIncrement">+</button>
+            </span>
+            <button id="setQtyMax" class="btn">SET MAX</button>
+          </div>
+          <div class="total-price-container">
+            <h3>Total</h3>
+            <p id="totalPrice">.001 ETH</p>
+          </div>
+          <button id="mintButton" class="hero-btn btn mint-btn">Mint</button>
+        </div>
+      </div>
+      <div class="minted-container card show-card hidden">
+        <h1>🎉</h1>
+        <h2>Minted!</h2>
+        <p>Here's your trasaction link:</p>
+        <a id="mintedTxnBtn" href="" target="_blank" rel="noopener noreferrer">
+          <button class="hero-btn btn">View Transaction</button>
+        </a>
+        <p>View it in the collection:</p>
+        <a
+          id="mintedLinkBtn"
+          href="https://testnets.opensea.io/collection/teststackr-collection"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="hero-btn btn">View Collection</button>
+        </a>
+      </div>
     </section>
-    <section id="features" class="bg-red py-5">
-        <div class="container py-xxl-5 mt-5">
-            <h2 class="mb-3 mt-5">Features</h2>
-            <div class="grid">
-                <div class="grid-item my-3">
-                    <div class="bg-white rounded-xl p-5">
-                        <div class="py-4"><i class="icon-basket fs-1 text-green"></i>
-                            <h3 class="fs-4 my-4 lh-sm">Exclusive Mingo Pack merchandise</h3>
-                            <p class="text-dark fw-regular">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Aut at nulla quae vero voluptatem numquam vitae unde sit quos exercitationem.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item my-3">
-                    <div class="bg-white rounded-xl p-5">
-                        <div class="py-4"><i class="icon-lock fs-1 text-light-blue"></i>
-                            <h3 class="fs-4 my-4 lh-sm">Access to the exclusive Mingo Pack ALPHA community
-                            </h3>
-                            <p class="text-dark fw-regular">Lorem ipsum dolor sit, amet consectecusantium, fugiatero
-                                earum!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item my-3">
-                    <div class="bg-white rounded-xl p-5">
-                        <div class="py-4"><i class="icon-map fs-1 text-red"></i>
-                            <h3 class="fs-4 my-4 lh-sm">Roadmap</h3>
-                            <p class="text-dark fw-regular">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Facere ad labore reiciendis, delectus natus deserunt modi voluptate ducimus consequuntur
-                                aliquam!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item my-3">
-                    <div class="bg-white rounded-xl p-5">
-                        <div class="py-4"><i class="icon-lightning fs-1 text-yellow"></i>
-                            <h3 class="fs-4 my-4 lh-sm">Other secret features</h3>
-                            <p class="text-dark fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                                sunt minima eos. Est, dolorem. Qui temporibus nihil corrupti porro recusandae!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item my-3">
-                    <div class="bg-white rounded-xl p-5">
-                        <div class="py-4"><i class="icon-present fs-1 text-green"></i>
-                            <h3 class="fs-4 my-4 lh-sm">Free NFT from our future collection</h3>
-                            <p class="text-dark fw-regular">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Quisquam soluta necessitatibus qui ipsum placeat nobis, maiores tenetur temporibus
-                                cupiditate alias!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item my-3">
-                    <div class="bg-white rounded-xl p-5">
-                        <div class="py-4"><i class="icon-dollar fs-1 text-yellow"></i>
-                            <h3 class="fs-4 my-4 lh-sm">Try to make some ETH with Mingo Pack ALPHA Insights
-                            </h3>
-                            <p class="text-dark fw-regular">Lorem ipsum dolor sit amet consec consequuntur sos
-                                dignissimosdipisci numquam luam delectus mollitia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5 my-md-5 counter-counts">
-        <div class="container py-xl-5 text-center">
-            <div class="row align-items-center flex-column">
-                <div class="col-lg-6">
-                    <h2 class="mb-4">Lorem Ipsum</h2>
-                </div>
-                <div class="col-lg-8">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deleniti aperiam aliquam maiores
-                        ullam suscipit rem esse debitis eveniet obcaecati harum eligendi, quis illum repudiandae quo
-                        unde error necessitatibus hic sequi? Rerum sequi in sint dolores sapiente est consequatur
-                        quidem. Aperiam officiis eveniet in laborum sed eius fuga et architecto numquam nemo ad officia
-                        corporis, repellat saepe ipsum excepturi aut odit quibusdam veritatis! Hic, eligendi, cum, unde
-                        culpa at dolore molestiae neque enim illum aliquam voluptates perspiciatis in possimus natus
-                        autem sed tenetur fuga accusantium quod ipsum distinctio sunt quibusdam nam. Fuga odit
-                        repudiandae tempore quis molestiae, ab veritatis dignissimos.</p>
-                </div>
-            </div>
-            <div class="row align-items-center mt-5">
-                <div class="col">
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Brains</span><br /><span
-                            class="ff-andes fs-1 fw-black text-light-blue counter-count"><span>1</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Bitcoin Tattos</span><br /><span
-                            class="ff-andes fs-1 fw-black text-red counter-count"><span>5</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Head Covers</span><br /><span
-                            class="ff-andes fs-1 fw-black text-green counter-count"><span>3</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Mouths</span><br /><span
-                            class="ff-andes fs-1 fw-black text-yellow counter-count"><span>8</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Beards</span><br /><span
-                            class="ff-andes fs-1 fw-black text-light-blue counter-count"><span>2</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Eyes</span><br /><span
-                            class="ff-andes fs-1 fw-black text-green counter-count"><span></span>8</span></div>
-                </div>
-                <div class="col-lg-4 col-5"><img src="https://via.placeholder.com/100" alt="Illustration 3"
-                        class="w-100" />
-                </div>
-                <div class="col">
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Eyes items</span><br /><span
-                            class="ff-andes fs-1 fw-black text-green counter-count"><span>3</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Hair</span><br /><span
-                            class="ff-andes fs-1 fw-black text-yellow counter-count"><span></span>7</span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Body styles</span><br /><span
-                            class="ff-andes fs-1 fw-black text-red counter-count"><span></span>2</span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Over neck items</span><br /><span
-                            class="ff-andes fs-1 fw-black text-light-blue counter-count"><span>9</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Clothes</span><br /><span
-                            class="ff-andes fs-1 fw-black text-green counter-count"><span></span>3</span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Hand items</span><br /><span
-                            class="ff-andes fs-1 fw-black text-red counter-count"><span>9</span></span></div>
-                    <div class="mb-4 lh-sm"><span class="text-uppercase fs-8">Backgrounds</span><br /><span
-                            class="ff-andes fs-1 fw-black text-yellow counter-count"><span>10</span></span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="roadmap" class="bg-green py-5 overflow-hidden">
-        <div class="container py-md-5 my-xl-5">
-            <h2 class="text-center mb-md-5">Roadmap</h2>
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col text-sm-end line-block order-2 order-sm-1"><span
-                        class="fs-1 ff-andes fw-black">10</span> <span class="fs-3 ff-andes fw-black">%
-                        Minted</span>
-                    <p class="fs-7 text-medium">We will mint 50 NFTs for future team, community, and giveaway
-                        purposes.</p>
-                    <div class="row line-illustration mt-md-5 pt-xl-5 d-none d-sm-flex">
-                        <div class="col-xl-7"><img src="https://via.placeholder.com/100" alt="Illustration 4"
-                                class="w-100" /></div>
-                    </div>
-                </div>
-                <div class="col-2 text-center text-xl-start order-1 order-sm-2"><span class="line-dot"></span><span
-                        class="line"></span></div>
-                <div class="col-4 d-none d-sm-block order-3"></div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-4 text-end order-3 order-sm-1 d-none d-sm-block"></div>
-                <div class="col-2 text-center text-xl-end order-1 order-sm-2"><span class="line-dot"></span><span
-                        class="line"></span></div>
-                <div class="col-sm-4 col line-block order-2 order-sm-3"><span class="fs-1 ff-andes fw-black">30</span>
-                    <span class="fs-3 ff-andes fw-black">%
-                        Minted</span>
-                    <p class="fs-7 text-medium">The
-                        <strong class="fw-black"> Mingo Pack Community</strong>for our NFT
-                        holders will be created. The only possible way to enter this community is by proving your
-                        Mingo Pack NFT ownership.
-                    </p>
-                    <p class="fs-7 text-medium">As a member of this closed community, you will have daily access to
-                        crypto/NFT trading tips from real crypto experts, firsthand pre-sale info about our (or
-                        other rare) future NFT projects, and access to many crypto giveaways! On top of that, you
-                        will be part of very exclusive / community of likeminded individuals!</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col text-sm-end line-block order-2 order-sm-1"><span
-                        class="fs-1 ff-andes fw-black">50</span> <span class="fs-3 ff-andes fw-black">%
-                        Minted</span>
-                    <p class="fs-7 text-medium">We will do a great
-                        <strong class="fw-black">giveaway of 0.35 ETH</strong> to three lucky minters of
-                        our Mingo Pack NFT Community.
-                    </p>
-                </div>
-                <div class="col-2 text-center text-xl-start order-1 order-sm-2"><span class="line-dot"></span><span
-                        class="line"></span></div>
-                <div class="col-4 order-3 d-none d-sm-block"></div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-4 text-end order-3 order-sm-1 d-none d-sm-block"></div>
-                <div class="col-2 text-center text-xl-end order-1 order-sm-2"><span class="line-dot"></span><span
-                        class="line"></span></div>
-                <div class="col-sm-4 col line-block order-2 order-sm-3"><span class="fs-1 ff-andes fw-black">70</span>
-                    <span class="fs-3 ff-andes fw-black">%
-                        Minted</span>
-                    <p class="fs-7 text-medium">We will <strong class="fw-black">donate 10 ETH</strong> to an
-                        organization dedicated to improving the lives of people with Alzheimer’s disease and
-                        dementia.</p>
-                    <div class="row justify-content-end line-illustration mt-md-5 pt-xl-5 d-none d-sm-flex">
-                        <div class="col-xl-7"><img src="https://via.placeholder.com/100" alt="Illustration 5"
-                                class="w-100" /></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col text-sm-end line-block order-2 order-sm-1"><span
-                        class="fs-1 ff-andes fw-black">90</span> <span class="fs-3 ff-andes fw-black">%
-                        Minted</span>
-                    <p class="fs-7 text-medium">We will create special Mingo Pack
-                        <strong class="fw-black">Merchandise</strong> that will be available at a huge
-                        discount for members and sent to many NFT influencers around the world, so that
-                        <strong class="fw-black">everyone from the crypto community knows about the Great
-                            Brains NFT project.</strong>
-                    </p>
-                </div>
-                <div class="col-2 text-center text-xl-start order-1 order-sm-2"><span class="line-dot"></span><span
-                        class="line"></span></div>
-                <div class="col-4 order-3 d-none d-sm-block"></div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-4 text-end order-3 order-sm-1 d-none d-sm-block">
-                    <div class="row mt-5 pt-5 d-none d-sm-flex">
-                        <div class="col-xl-7"><img src="https://via.placeholder.com/100" alt="Illustration 6"
-                                class="w-100" /></div>
-                    </div>
-                </div>
-                <div class="col-2 text-center text-xl-end order-1 order-sm-2"><span class="line-dot"></span></div>
-                <div class="col-sm-4 col line-block order-2 order-sm-3"><span class="fs-1 ff-andes fw-black">100</span>
-                    <span class="fs-3 ff-andes fw-black">%
-                        Minted</span>
-                    <p class="fs-7 text-medium">We are already working on a future NFT Collection that will drop
-                        shortly after the Mingo Pack NFT collections is 100% minted. And yes—you guessed
-                        it—2,500 lucky owners of the Mingo Pack NFT will receive a random piece of
-                        <strong class="fw-black">NFT from the following collection for free!</strong>
-                    </p>
-                    <p class="fs-7 text-medium">It will also stay our top priority to keep working on the Great
-                        Brains project intensively, so that the recognition and value of the Mingo Pack
-                        NFT goes all the way up - to the moon!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5 my-5">
-        <div class="container py-5">
-            <h2 class="text-center mb-5 pb-5">Roadmap 2.0</h2>
-            <div class="row g-5">
-                <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column">
-                    <div class="bg-light-blue rounded-xxl p-5 shadow-bottom order-3 order-lg-1">
-                        <div class="row">
-                            <div class="col-2 text-center px-0 px-xxl-3"><i
-                                    class="icon-people fs-3 rounded-circle bg-white border border-4 border-dark text-light-blue p-2 shadow-bottom shadow-sm d-inline-block"></i><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col col-xxl-9">
-                                <h3 class="fs-4 lh-sm pt-3 pb-5"> Mingo Pack NFT Holders Community</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 text-center position-relative px-0 px-xxl-3"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-10">
-                                <p class="fs-7 pt-1"> Mingo Pack Website - VIP Section Access</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 text-center position-relative px-0 px-xxl-3"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-10">
-                                <p class="fs-7 pt-1">Daily tips on the best upcoming NFT projects</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 text-center position-relative px-0 px-xxl-3"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-10">
-                                <p class="fs-7 pt-1">Premium and Educational content</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 text-center position-relative px-0 px-xxl-3"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-10">
-                                <p class="fs-7 pt-1">Merchandise</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 text-center position-relative px-0 px-xxl-3"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-10">
-                                <p class="fs-7 pt-1">Access to GBC VIP Events</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 text-center position-relative px-0 px-xxl-3"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span></div>
-                            <div class="col-10">
-                                <p class="fs-7 pt-1">Connection with likeminded individuals</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4 order-2">
-                        <div class="col-6 text-center rotate-180 rotate-lg-0"><span
-                                class="roadmap2-arrow border-light-blue rotate-270 d-inline-block ms-0 mt-0"></span><span
-                                class="roadmap2-line bg-light-blue h-25 rounded-0"></span>
-                            <div class="bg-light-blue rounded-lg py-3 px-xl-5">
-                                <p class="mb-0 fw-black fs-5 text-uppercase lh-base rotate-180 rotate-lg-0">+ ETH
-                                    giveaways</p>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center rotate-180 rotate-lg-0"><span
-                                class="roadmap2-arrow border-light-blue rotate-270 d-inline-block ms-0 mt-0"></span><span
-                                class="roadmap2-line bg-light-blue h-25 rounded-0"></span>
-                            <div class="bg-light-blue rounded-lg py-3 px-xxl-5">
-                                <p class="mb-0 fw-black fs-5 text-uppercase lh-base rotate-180 rotate-lg-0">regular
-                                    giveaways</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5 position-relative order-1 order-lg-3">
-                        <div class="col-6 text-center px-0 rotate-180 rotate-lg-0"><span
-                                class="roadmap2-arrow rotate-270 d-inline-block ms-0 mt-0"></span><span
-                                class="roadmap2-line h-100 rounded-0 pt-5 pt-lg-0"></span><span
-                                class="roadmap2-line-curve mt-n1 ms-auto ms-lg-0 rotate-180 rotate-lg-0 position-absolute position-lg-static right-0 top-100"></span>
-                            <div
-                                class="ms-lg-auto ps-lg-4 position-absolute position-lg-static left-0 right-50 bottom-0 pe-3 pe-lg-0">
-                                <span class="roadmap2-line-horizontal mt-n1 ms-lg-auto w-lg-50 rounded-0"></span>
-                            </div>
-                            <div class="py-lg-5 my-lg-2 my-xl-4 my-xxl-0"></div>
-                            <div class="d-lg-none rotate-180 position-absolute left-0 right-0 mx-auto"><span
-                                    class="roadmap2-line rounded-0 pt-5 pt-lg-0"><span class="py-5 px-1"></span><span
-                                        class="py-md-5 d-block"></span></span>
-                                <p
-                                    class="fw-black fs-5 text-uppercase px-2 pb-2 underline-light-blue d-inline-block mb-0">
-                                    for each NFT</p>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center px-0 rotate-180 rotate-lg-0"><span
-                                class="roadmap2-arrow rotate-270 d-inline-block ms-0 mt-0"></span><span
-                                class="roadmap2-line h-auto h-lg-100 rounded-0 pt-5 pt-lg-0"></span><span
-                                class="roadmap2-line-curve mt-n1"></span>
-                            <div class="ms-auto ps-3 ps-lg-0 w-50 w-lg-200"><span
-                                    class="roadmap2-line-horizontal mt-n1 rounded-0"></span></div>
-                            <div class="py-lg-5 my-lg-2 my-xl-4 my-xxl-0"></div>
-                            <p
-                                class="fw-black fs-5 text-uppercase bg-white position-absolute top-100 for-each-nft p-1 p-xl-2 underline-light-blue d-none d-lg-block">
-                                for each NFT</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 order-1 order-lg-2">
-                    <div class="bg-green rounded-xxl py-5 px-4 shadow-bottom">
-                        <div class="row justify-content-end justify-content-sm-start">
-                            <div class="col-3 col-sm-2 text-center"><i
-                                    class="icon-radio fs-1 rounded-circle bg-white border border-4 border-dark text-green p-2 shadow-bottom shadow-sm d-inline-block"></i><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-9 col-sm-10">
-                                <div class="row">
-                                    <div class="col-sm-5 ps-0 pe-xxl-0">
-                                        <h3 class="fs-4 lh-sm pt-3 pb-sm-5"> Mingo Pack Public Media Content
-                                        </h3>
-                                    </div>
-                                    <div class="col-sm px-0">
-                                        <div class="row">
-                                            <div class="offset-sm-4 col col-xl-7 col-xxl-6 ps-sm-0">
-                                                <h3 class="fs-4 lh-sm pt-3 pb-5">How does it make money?</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3 col-sm-2 text-center position-relative"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-9 col-sm-10">
-                                <div class="row">
-                                    <div class="col-sm-5 ps-2">
-                                        <p class="fs-7 pt-1"> Mingo Pack Youtube Channel focused on NFTs (ENG)</p>
-                                    </div>
-                                    <div class="col ps-0">
-                                        <div class="row g-0">
-                                            <div class="col-4 overflow-hidden pe-3">
-                                                <div class="row g-0 mt-3 h-100 position-relative">
-                                                    <div class="col ps-1 ps-sm-0"><span
-                                                            class="roadmap2-line-horizontal d-none d-sm-block"></span><span
-                                                            class="roadmap2-line-curve rotate-sm-180 position-absolute bottom-100 bottom-sm-unset mb-n1 top-sm-0 right-sm-50 ps-0"></span><span
-                                                            class="roadmap2-line-horizontal roadmap2-line-curve-extension roadmap2-line-curve-extension-full mt-0 me-2 w-sm-25 d-sm-none"></span><span
-                                                            class="roadmap2-line position-absolute top-0 right-sm-50 mt-sm-3"></span>
-                                                    </div>
-                                                    <div class="col-auto"><span class="roadmap2-arrow"></span></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-8 ps-0">
-                                                <p class="fs-7 pt-1 mb-4">Google Ads Revenue</p>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-n1">
-                                            <div class="col-4">
-                                                <div class="row g-0 position-relative align-items-center">
-                                                    <div class="col ps-1 ps-sm-0"><span
-                                                            class="roadmap2-line-curve position-absolute left-sm-50 ps-0 top-0"></span><span
-                                                            class="roadmap2-line-horizontal roadmap2-line-curve-extension roadmap2-line-curve-extension-full mt-0 me-2 w-sm-25"></span>
-                                                    </div>
-                                                    <div class="col-auto"><span class="roadmap2-arrow mt-2"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-8 ps-0">
-                                                <p class="fs-7 pt-1">Paid sponsorships, NFT Reviews,
-                                                    Product-Placement, Paid Giveaways, etc.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3 col-sm-2 text-center position-relative"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span><span
-                                    class="roadmap2-line"></span></div>
-                            <div class="col-9 col-sm-10">
-                                <div class="row">
-                                    <div class="col-sm-5 ps-2">
-                                        <p class="fs-7 pt-1"> Mingo Pack NFT Podcast with Guests (ENG)</p>
-                                    </div>
-                                    <div class="col ps-0">
-                                        <div class="row">
-                                            <div class="col-4 overflow-hidden">
-                                                <div class="row g-0 mt-3 h-100 position-relative">
-                                                    <div class="col ps-1 ps-sm-0"><span
-                                                            class="roadmap2-line-horizontal d-none d-sm-block"></span><span
-                                                            class="roadmap2-line-curve position-absolute ps-0 bottom-100 mb-n1 d-sm-none"></span><span
-                                                            class="roadmap2-line-horizontal roadmap2-line-curve-extension roadmap2-line-curve-extension-full mt-0 me-2 w-sm-25 d-sm-none"></span>
-                                                    </div>
-                                                    <div class="col-auto"><span class="roadmap2-arrow"></span></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-8 ps-0">
-                                                <p class="fs-7 pt-1 mb-4">Paid mentions, NFT Reviews, Paid
-                                                    Giveaways, etc.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3 col-sm-2 text-center position-relative"><span
-                                    class="roadmap2-line-curve"></span><span
-                                    class="roadmap2-line-horizontal roadmap2-line-curve-extension"></span></div>
-                            <div class="col-9 col-sm-10">
-                                <div class="row">
-                                    <div class="col-sm-5 ps-2">
-                                        <p class="fs-7 pt-1">Complex Website around NFT space, incl. Upcoming
-                                            projects listings, rarity scoring, and educational content around NFTs
-                                        </p>
-                                    </div>
-                                    <div class="col ps-0">
-                                        <div class="row">
-                                            <div class="col-4 overflow-hidden">
-                                                <div class="row g-0 mt-3 h-100 position-relative">
-                                                    <div class="col ps-1 ps-sm-0"><span
-                                                            class="roadmap2-line-horizontal d-none d-sm-block"></span><span
-                                                            class="roadmap2-line-curve rotate-sm-180 position-absolute bottom-100 mb-n1 top-sm-0 right-sm-50 ps-0"></span><span
-                                                            class="roadmap2-line-horizontal roadmap2-line-curve-extension roadmap2-line-curve-extension-full mt-0 me-2 w-sm-25 d-sm-none"></span><span
-                                                            class="roadmap2-line position-absolute top-0 right-sm-50 mt-sm-3"></span>
-                                                    </div>
-                                                    <div class="col-auto"><span class="roadmap2-arrow"></span></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-8 ps-0">
-                                                <p class="fs-7 pt-1 mb-4">Upcoming NFT projects listings, PR
-                                                    Articles, Ad banners, etc.</p>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-n1">
-                                            <div class="col-4">
-                                                <div class="row g-0 position-relative align-items-center">
-                                                    <div class="col ps-1 ps-sm-0"><span
-                                                            class="roadmap2-line-curve position-absolute left-sm-50 ps-0 top-0"></span><span
-                                                            class="roadmap2-line-horizontal roadmap2-line-curve-extension roadmap2-line-curve-extension-full mt-0 me-2 w-sm-25"></span>
-                                                    </div>
-                                                    <div class="col-auto"><span class="roadmap2-arrow mt-2"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col ps-0">
-                                                <p class="fs-7 pt-1">Rarity listings</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-12">
-                                <p class="fw-black text-center fs-5-5 lh-base">Every month, part of the profit
-                                    generated from the Mingo Pack Public Media Content will be used for the
-                                    GBC NFT Holders (Community)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-0">
-                        <div class="col-sm-6 offset-xl-1 ps-4">
-                            <div class="row justify-content-end">
-                                <div class="col-auto"><img src="assets/img/roadmap2-line-arrow.svg" alt="v" /></div>
-                                <div class="col-2"></div>
-                            </div>
-                            <div class="bg-dark rounded-xl text-white p-4 z-index-2">
-                                <p class="text-uppercase fs-3 fw-black mb-0 text-center lh-base">Community wallet
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-5 mt-sm-4 pt-sm-3">
-                            <div class="row g-0 align-items-sm-center justify-content-between justify-content-sm-start">
-                                <div class="col-3 d-sm-none"><span
-                                        class="roadmap2-line me-0 mt-0 rounded-0 me-1"></span></div>
-                                <div class="col-9 col-sm-3">
-                                    <div
-                                        class="row align-items-center justify-content-center g-0 flex-column flex-sm-row">
-                                        <div class="col-auto rotate-90 rotate-sm-0"><span
-                                                class="roadmap2-arrow border-red rotate-180 ms-1 mt-0"></span></div>
-                                        <div class="col-3 col-sm"><span
-                                                class="roadmap2-line-horizontal bg-red rounded-0 d-none d-sm-block"></span><span
-                                                class="roadmap2-line bg-red rounded-0 d-sm-none pb-5"></span></div>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-sm-none"><span
-                                        class="roadmap2-line me-0 mt-0 rounded-0 me-1"></span></div>
-                                <div class="col col-sm-8">
-                                    <div class="row g-0 justify-content-center">
-                                        <div class="col-auto">
-                                            <div
-                                                class="rounded-circle roadmap2-circle bg-red shadow-bottom text-center text-uppercase p-3 d-flex justify-content-center align-items-center flex-column">
-                                                <span class="fs-0 fw-black lh-1">+2%</span><span
-                                                    class="fs-5 fw-black lh-sm">from the royalty fees</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="community" class="py-5 my-md-5 text-center overflow-x-clip">
-        <div class="container py-lg-5 my-xl-5">
-            <div class="row align-items-center flex-column">
-                <div class="col-12">
-                    <h2 class="mb-5"> Mingo Pack NFT Holders Community Membership</h2>
-                </div>
-                <div class="col-xl-8">
-                    <p>As we have already mentioned, a Mingo Pack community for our NFT holders will be
-                        created right after 30% of Mingo Pack NFTs are minted (which means very soon after
-                        the drop date). In order to get access to this exclusive community, you will have to prove
-                        ownership of at least one Mingo Pack NFT. There will be no other way to the get
-                        access.</p>
-                    <p class="fw-black">Here you can see what exactly you will get as a Mingo Pack community
-                        member:</p>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5 mt-lg-0">
-                <div class="col-auto bg-circle">
-                    <div class="circle-container" style="--m:7;--tan:0.241">
-                        <div class="circle-w-xl col-12">
-                            <h3 class="fs-4 lh-sm"> Mingo Pack NFT Holders Community</h3>
-                        </div>
-                        <div style="--i:1" class="col-9 col-sm-6 p-3">
-                            <div class="position-relative">
-                                <div class="pulsing"><i class="icon-bulb fs-0 text-light-blue"></i>
-                                    <h4 class="ff-andes fw-black fs-5-5 mt-4">NFT Trading Tips</h4>
-                                </div>
-                                <div class="hover-content">
-                                    <p>All Mingo Pack NFT Holders will have access to frequent NFT trading
-                                        tips and recommendations from invited crypto experts and the Mingo Pack
-                                        NFT developers themselves. There is a huge amount of money to be made
-                                        with NFT trading, and inside the Mingo Pack NFT holders’ community,
-                                        we will try to help you achieve great profits as well.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="--i:2" class="col-9 col-sm-6 p-3">
-                            <div class="position-relative">
-                                <div class="pulsing"><i class="icon-award fs-0 text-red"></i>
-                                    <h4 class="ff-andes fw-black fs-5-5 mt-4">Pre-Sale Info About Future NFT
-                                        Projects &amp; Collections</h4>
-                                </div>
-                                <div class="hover-content">
-                                    <p>As a member of the Mingo Pack NFT holders’ exclusive community, you
-                                        will be first to know about all our (and also other interesting) NFT
-                                        collections.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="--i:3" class="col-9 col-sm-6 p-3">
-                            <div class="position-relative">
-                                <div class="pulsing"><i class="icon-present fs-0 text-yellow"></i>
-                                    <h4 class="ff-andes fw-black fs-5-5 mt-4">Frequent Giveaways</h4>
-                                </div>
-                                <div class="hover-content">
-                                    <p>We are planning to do many giveaways inside the Mingo Pack NFT
-                                        holders’ exclusive community that you definitely won’t want to miss out on.
-                                        These will include NFT giveaways, ETH giveaways, merchandise giveaways, and
-                                        many others!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="--i:4" class="col-9 col-sm-6 p-3">
-                            <div class="position-relative">
-                                <div class="pulsing"><i class="icon-archive fs-0 text-green"></i>
-                                    <h4 class="ff-andes fw-black fs-5-5 mt-4">Merchandise Development &amp;
-                                        Influencer Distribution</h4>
-                                </div>
-                                <div class="hover-content">
-                                    <p>If you have read our
-                                        <a href="#roadmap" class="text-decoration-underline text-dark">ROADMAP</a>,
-                                        you already
-                                        know about the merchandise we have huge plans for. As a member of the Great
-                                        Brains NFT holders’ community, you will have a chance to take part in
-                                        the merchandise development as well as in choosing the crypto/NFT
-                                        influencers that we will send the Mingo Pack NFT merchandise to for
-                                        them to wear, so that the influencers can showcase the Mingo Pack NFT
-                                        collection to their followers, fans, and community through the merchandise!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="--i:5" class="col-9 col-sm-6 p-3">
-                            <div class="position-relative">
-                                <div class="pulsing"><i class="icon-radio fs-0 text-light-blue"></i>
-                                    <h4 class="ff-andes fw-black fs-5-5 mt-4">NFT/Crypto News, Courses And Webinars
-                                    </h4>
-                                </div>
-                                <div class="hover-content">
-                                    <p>We want our Mingo Pack NFT holders’ community members to be well
-                                        educated in the crypto and NFT world. That’s why there will be frequent
-                                        crypto/NFT webinars and other valuable information shared by cryptocurrency
-                                        experts and successful investors from all around the world.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="--i:6" class="col-9 col-sm-6 p-3">
-                            <div class="position-relative">
-                                <div class="pulsing"><i class="icon-people fs-0 text-red"></i>
-                                    <h4 class="ff-andes fw-black fs-5-5 mt-4">Connection With Likeminded Individuals
-                                    </h4>
-                                </div>
-                                <div class="hover-content">
-                                    <p> Mingo Pack NFT holders will have a great chance to connect with each
-                                        other, and we are 100-percent sure that many amazing things, projects,
-                                        ideas, and friendships will come out of the community membership for
-                                        everyone involved.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="--i:7" class="col-9 col-sm-6 p-3">
-                            <div class="position-relative">
-                                <div class="pulsing"><i class="icon-plus-circle fs-0 text-yellow"></i>
-                                    <h4 class="ff-andes fw-black fs-5-5 mt-4">And Much More!</h4>
-                                </div>
-                                <div class="hover-content">
-                                    <p>There are also many other things that will certainly be happening in the
-                                        Mingo Pack NFT holders’ community that we want to keep private for
-                                        now. But we can promise you that you have many things to look forward to.
-                                        <strong>Just don’t forget to mint your Mingo Pack NFT, and
-                                            we assure you that you will not regret it!</strong>
-                                    </p>
-                                    <p>By the way, we recommend that everyone buy at least
-                                        <strong>three Mingo Pack NFTs</strong>, but we won’t tell
-                                        you why just yet :P.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-yellow py-5 overflow-hidden">
-        <div class="slide-carousels py-md-5 my-xl-5">
-            <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item carousel-item-next carousel-item-start" data-bs-interval="1">
-                        <div class="row mx-0">
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item active carousel-item-start" data-bs-interval="1">
-                        <div class="row mx-0">
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel slide mt-4" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item carousel-item-next carousel-item-start" data-bs-interval="1">
-                        <div class="row mx-0">
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item active carousel-item-start" data-bs-interval="1">
-                        <div class="row mx-0">
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                            <div class="col"><img src="https://via.placeholder.com/100" class="w-100"
-                                    alt="Slide illustration 1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="team" class="py-5 my-md-5 text-center">
-        <div class="container my-xl-5 py-xxl-5">
-            <h2 class="mb-5 pb-xl-5">Lorem Ipsum</h2>
-            <div class="row justify-content-center g-lg-5">
-                <div class="col-xl-1 d-none d-xl-block"></div>
-                <div class="col-6 col-sm-4 col-xl-3"><img src="https://via.placeholder.com/100" alt="Photo 1"
-                        class="w-100" />
-                    <h3 class="mt-4 fs-4 mb-1">Lorem Ipsum</h3>
-                    <p class="fs-7 lh-base px-2">Director &amp; Visionary of the Mingo Pack </p>
-                </div>
-                <div class="col-6 col-sm-4 col-xl-3"><img src="https://via.placeholder.com/100" alt="Photo 2"
-                        class="w-100" />
-                    <h3 class="mt-4 fs-4 mb-1">Lorem Ipsum</h3>
-                    <p class="fs-7 lh-base px-2">Director of Community &amp; Marketing of the Mingo Pack </p>
-                </div>
-                <div class="col-6 col-sm-4 col-xl-3"><img src="https://via.placeholder.com/100" alt="Photo 3"
-                        class="w-100" />
-                    <h3 class="mt-4 fs-4 mb-1">Lorem Ipsum</h3>
-                    <p class="fs-7 lh-base px-2">Artist &amp; Chief Illustrator of the Mingo Pack </p>
-                </div>
-                <div class="col-xl-1 d-none d-xl-block"></div>
-                <div class="col-6 col-sm-4 col-xl-3"><img src="https://via.placeholder.com/100" alt="Photo 4"
-                        class="w-100" />
-                    <h3 class="mt-4 fs-4 mb-1">Lorem Ipsum</h3>
-                    <p class="fs-7 lh-base px-2">Programmer of the Mingo Pack </p>
-                </div>
-                <div class="col-6 col-sm-4 col-xl-3"><img src="https://via.placeholder.com/100" alt="Photo 5"
-                        class="w-100" />
-                    <h3 class="mt-4 fs-4 mb-1">Lorem Ipsum</h3>
-                    <p class="fs-7 lh-base px-2">Smart Contract Engineer &amp; Developer of the Mingo Pack
-                    </p>
-                </div>
-                <div class="col-6 col-sm-4 col-xl-3"><img src="https://via.placeholder.com/100" alt="Photo 6"
-                        class="w-100" />
-                    <h3 class="mt-4 fs-4 mb-1">Lorem Ipsum</h3>
-                    <p class="fs-7 lh-base px-2">Blockchain expert of the Mingo Pack </p>
-                </div>
-            </div>
-            <div
-                class="row justify-content-sm-between justify-content-xl-center justify-content-center mt-lg-5 pt-5 text-center text-sm-start">
-                <div class="col-xl-7 col-md-auto py-3 py-md-0">
-                    <h3 class="text-uppercase ff-inherit fw-regular fs-8 mb-3">Contact us</h3><a href="#"
-                        target="_blank" class="fs-1 fw-black ff-andes text-dark text-decoration-none"
-                        rel="noreferrer">abc.com</a>
-                </div>
-                <div class="col-auto py-3 py-md-0">
-                    <h3 class="text-uppercase ff-inherit fw-regular fs-8 mb-3">Follow us</h3>
-                    <div class="row">
-                        <div class="col px-1"><a href="https://discord.gg/A9CnsVzzkZ" target="_blank"
-                                class="btn btn-icon bg-hover-light-blue" rel="noreferrer"><i
-                                    class="icon-discord fs-1"></i></a></div>
-                        <div class="col px-1"><a href="https://twitter.com/codeSTACKr" target="_blank"
-                                class="btn btn-icon bg-hover-light-blue" rel="noreferrer"><i
-                                    class="icon-twitter fs-1"></i></a></div>
-                        <div class="col px-1"><a href="https://opensea.io/collection/codecats" rel="noreferrer"
-                                target="_blank" class="btn btn-icon bg-hover-light-blue"><i
-                                    class="icon icon-opensea fs-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="faq" class="bg-light-blue py-5">
-        <div class="container py-md-5 my-lg-5">
-            <h2 class="text-center mb-4">FAQ</h2>
-            <p class="text-center">Some of your frequently asked questions.</p>
-            <div class="row justify-content-center mt-5 pt-4">
-                <div class="col-xl-8 col-lg-10">
-                    <div id="faq-collapse">
-                        <h3 class="fs-4 mb-0 pb-3" data-bs-target="#faq-collapse-1" data-bs-toggle="collapse">When
-                            are the Mingo Pack dropping?</h3>
-                        <div class="collapse fs-7" id="faq-collapse-1">
-                            <p class="mb-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nihil
-                                reprehenderit nam necessitatibus unde in, recusandae incidunt quam explicabo rerum,
-                                quaerat labore blanditiis culpa exercitationem, hic atque placeat a? Vitae consectetur
-                                nam doloremque, sequi adipisci odio aut, ut, expedita in reprehenderit vero. Nesciunt
-                                reiciendis error labore sed? Voluptatum aspernatur alias expedita sapiente aperiam,
-                                excepturi omnis eveniet natus doloribus, quam totam vel quisquam quis accusantium
-                                veritatis sed ea assumenda dolore est iusto esse! Sunt, repudiandae amet? Quia quae unde
-                                a eius architecto corrupti facilis esse similique, odio nobis quis dolor commodi
-                                repellat iusto dignissimos! Eaque, magnam. Quos itaque sed excepturi autem!
-                            </p>
-                        </div>
-                        <h3 class="fs-4 mb-0 pb-3 mt-5" data-bs-target="#faq-collapse-2" data-bs-toggle="collapse">
-                            How much will Mingo Pack NFTs cost?</h3>
-                        <div class="collapse fs-7" id="faq-collapse-2">
-                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo, nisi
-                                commodi recusandae ipsam, doloremque aperiam quidem enim ad repellendus eius dolores at
-                                adipisci modi. Deleniti, nobis dolorum. Impedit, quod. Placeat ipsum libero dolor
-                                voluptas eligendi quis vitae consectetur, sit harum nobis iusto deleniti. Pariatur
-                                quidem dicta est? Reprehenderit, atque esse aliquid quas nulla distinctio incidunt
-                                dolorum voluptate dolor nostrum tempora culpa obcaecati ex voluptatum nisi explicabo
-                                laborum asperiores illo. Perspiciatis perferendis possimus ipsa iure, nihil beatae
-                                quidem exercitationem fuga totam vero suscipit magni, maxime ab quo doloribus. Repellat,
-                                animi iste. Numquam veritatis optio autem. Natus pariatur hic reprehenderit consectetur?
-                            </p>
-                        </div>
-                        <h3 class="fs-4 mb-0 pb-3 mt-5" data-bs-target="#faq-collapse-3" data-bs-toggle="collapse">
-                            How and where can I purchase Mingo Pack NFTs?</h3>
-                        <div class="collapse fs-7" id="faq-collapse-3">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo minus explicabo
-                                consectetur consequuntur quaerat officia soluta nisi quasi cupiditate commodi at facilis
-                                ipsum sunt deleniti quam accusamus quis dolor aliquid quibusdam, architecto nobis? Odit
-                                quos animi, voluptatum laudantium pariatur dolorem at adipisci fugiat alias qui
-                                excepturi repellendus error impedit ea dolore beatae veritatis quo. Architecto pariatur
-                                adipisci, eligendi animi dolores itaque asperiores, quo placeat odio omnis nam nisi eos
-                                labore nulla quas aliquam temporibus ad debitis exercitationem alias ullam. Veritatis
-                                est nostrum error fugiat necessitatibus voluptas vitae incidunt ipsam? Corrupti iusto
-                                veniam, ad ab explicabo eligendi unde dolores voluptates!
-                            </p>
-                        </div>
-                        <h3 class="fs-4 mb-0 pb-3 mt-5" data-bs-target="#faq-collapse-4" data-bs-toggle="collapse">
-                            How many Mingo Pack NFTs can be minted per transaction?</h3>
-                        <div class="collapse fs-7" id="faq-collapse-4">
-                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae
-                                cumque facere quasi blanditiis labore rerum eaque? Excepturi, itaque repellat?</p>
-                        </div>
-                        <h3 class="fs-4 mb-0 pb-3 mt-5" data-bs-target="#faq-collapse-5" data-bs-toggle="collapse">
-                            What type of tokens are the Mingo Pack?</h3>
-                        <div class="collapse fs-7" id="faq-collapse-5">
-                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, minima.
-                            </p>
-                        </div>
-                        <h3 class="fs-4 mb-0 pb-3 mt-5" data-bs-target="#faq-collapse-6" data-bs-toggle="collapse">
-                            How many Mingo Pack do you recommend buying on the drop day?</h3>
-                        <div class="collapse fs-7" id="faq-collapse-6">
-                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, iure
-                                autem distinctio earum molestias sequi saepe quae maiores voluptatibus exercitationem
-                                beatae rerum hic sed corporis velit ad! Ad pariatur, veniam libero, sint quisquam
-                                maiores assumenda possimus vel officiis id dignissimos, magni laboriosam error molestias
-                                architecto facilis placeat totam debitis dolorum.</p>
-                        </div>
-                        <h3 class="fs-4 mb-0 pb-3 mt-5" data-bs-target="#faq-collapse-7" data-bs-toggle="collapse">
-                            How can I contact the Mingo Pack team?</h3>
-                        <div class="collapse fs-7" id="faq-collapse-7">
-                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit
-                                omnis repellat quae minima odio eius! Doloribus, iure tenetur odio nobis eveniet
-                                possimus labore! Assumenda nobis sapiente rem nesciunt vel maiores dolor. Quod
-                                voluptatibus, architecto dolorum aspernatur aliquid eos, alias repellendus, deleniti
-                                vero delectus suscipit impedit odit quibusdam enim facere.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="py-sm-5 py-3">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-xl-2 col-lg-3 col-4"><img src="assets/img/favicon-32x32.png" height="30px" width="30px"
-                        alt=" Mingo Pack  " /></div>
-                <div class="col-auto">
-                    <div class="row">
-                        <div class="col"><a href="https://discord.gg/A9CnsVzzkZ" target="_blank"
-                                class="btn btn-icon bg-hover-light-blue border-0" rel="noreferrer"><i
-                                    class="icon-discord fs-3"></i></a></div>
-                        <div class="col"><a href="https://twitter.com/codeSTACKr" target="_blank"
-                                class="btn btn-icon bg-hover-light-blue border-0" rel="noreferrer"><i
-                                    class="icon-twitter fs-3"></i></a></div>
-                        <div class="col"><a href="https://opensea.io/collection/codecats" rel="noreferrer"
-                                target="_blank" class="btn btn-icon bg-hover-light-blue border-0"><i
-                                    class="icon icon-opensea fs-3"></i></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <p class="mb-0 fs-8">Ⓒ2022 – All rights reserved by Mingo Pack </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/custom.js"></script>
+
+    <div id="spinner" class="dot-spin"></div>
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="641.png">
+          </li>
+          <li class="splide__slide">
+            <img src="965.png">
+          </li>
+          <li class="splide__slide">
+            <img src="1191.png">
+          </li>
+          <li class="splide__slide">
+            <img src="Untitled-7-02.png">
+          </li>
+          <li class="splide__slide">
+            <img src="which mingo.png">
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="js/metamask-onboarding.bundle.js"></script>
     <script src="js/web3.min.js"></script>
     <script src="js/splide.min.js"></script>
     <script src="js/constants.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>
