@@ -13657,8 +13657,7 @@ strong {
 
 header {
     position: fixed;
-    left: 10px;
-    right: 10px;
+    width: 100%;
     z-index: 99;
     -webkit-transition: padding .2s ease;
     transition: padding .2s ease
