@@ -17,49 +17,8 @@
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background-color: var(--bg-color);
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
-  color: var(--font-color);
-  font-family: var(--font-primary);
-}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* HEADER */
-
-header {
-  background-color: var(--bg-color);
-  box-shadow: var(--header-shadow);
-}
-
-header .container {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
 
 /* NOT CONNECTED */
 .not-connected {
@@ -158,9 +117,6 @@ header .container {
 
 /* COUNTDOWN SECTION */
 
-section {
-  flex: 1 1 auto;
-}
 
 #countdown {
   display: none;
