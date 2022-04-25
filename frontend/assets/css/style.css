@@ -14622,6 +14622,27 @@ input[type=number] {
 }
 
 
+/* @awais-css */
+
+.custom-padding{
+    padding: 15rem 3rem 3rem 3rem;
+   
+}
+.countdown-section{
+    padding-top: 10rem;
+}
+.custom-card{
+    width: 80%;
+    margin: 0 auto;
+}
+/* Media Queries For Small */
+@media only screen and (max-width: 576px) {
+    .custom-padding{
+        padding: 10rem 3rem 3rem 3rem;
+    } 
+}
+
+
 /* Media Queries For Medium */
 @media only screen and (min-width: 768px) {
     .grid
@@ -14652,6 +14673,7 @@ input[type=number] {
     {
         position: absolute; left: 52.1552%; top: 1252.76px;
     }
+   
 }
 
 /* Media Queries For Large */
