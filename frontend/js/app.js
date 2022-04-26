@@ -206,6 +206,8 @@ async function loadInfo() {
   // SHOW CARD
   setTimeout(() => {
     const countdownCard = document.querySelector('.countdown');
+    const countdownsection = document.querySelector('.countdown-section');
+    countdownsection.classList.remove('hidden');
     countdownCard.classList.add('show-card');
   }, 1000);
 
@@ -311,6 +313,8 @@ async function mint() {
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
           mintedTxnBtn.href = url;
           countdownContainer.classList.add('hidden');
+          const countdownsection = document.querySelector('.countdown-section');
+          countdownsection.classList.remove('hidden');
           mintedContainer.classList.remove('hidden');
         }
         console.log("Minuted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
@@ -347,8 +351,11 @@ async function mint() {
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
           mintedTxnBtn.href = url;
+          const countdownsection = document.querySelector('.countdown-section');
+          countdownsection.classList.remove('hidden');
           countdownContainer.classList.add('hidden');
           mintedContainer.classList.remove('hidden');
+
         }
         console.log("Minuted successfully!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
       } else {
