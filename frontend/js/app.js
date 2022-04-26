@@ -310,8 +310,8 @@ async function mint() {
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
           mintedTxnBtn.href = url;
-          countdownContainer.css("display","none");
-          mintedContainer.css("display","block");
+          countdownContainer.classList.add('hidden');
+          mintedContainer.classList.remove('hidden');
         }
         console.log("Minuted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
       } else {
@@ -347,8 +347,8 @@ async function mint() {
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
           mintedTxnBtn.href = url;
-          countdownContainer.css("display","none");
-          mintedContainer.css("display","block");
+          countdownContainer.classList.add('hidden');
+          mintedContainer.classList.remove('hidden');
         }
         console.log("Minuted successfully!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
       } else {
