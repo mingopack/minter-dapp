@@ -14707,11 +14707,3 @@ input[type=number] {
         position: absolute; left: 68.457%; top: 506px;
     }
 }
-
-/* Media Queries For Custom Navbar */
-@media only screen and (max-width: 992px) {
-    .navbar-nav
-    {
-        text-align: right !important;
-    }
-}
