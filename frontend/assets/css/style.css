@@ -14707,3 +14707,19 @@ input[type=number] {
         position: absolute; left: 68.457%; top: 506px;
     }
 }
+
+@media only screen and (min-width: 992px) {
+    .responsive 
+    {
+        -webkit-align-items: center !important;
+        -moz-box-align: center !important;
+        align-items: center !important
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .responsive 
+    {
+       text-align: right !important;
+    }
+}
