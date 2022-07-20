@@ -8,19 +8,21 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "mingopack.xyz";
-const description = "Mingo Pack are a collection of 10,000 chubby flamingos from the Mingo Pack Group. Randomly genereated and carefully curated, every Mingo is individual an unique.";
+const description = "Mingo Pack are a collection of 5555 chubby flamingos from the Mingo Pack Group. Randomly genereated and carefully curated, every Mingo is individual an unique.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 5555,
     layersOrder: [
-      { name: "Background" },
-      { name: "body" },
-      { name: "dress" },
-      { name: "eye" },
-      { name: "head" },
+      { name: "background" },
+      { name: "skin colour" },
+      { name: "base" },
+      { name: "outfit" },
+      { name: "eyes" },
+      { name: "mouth" },
+      { name: "hat" },
     ],
   },
 ];
