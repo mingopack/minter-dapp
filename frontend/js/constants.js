@@ -22,7 +22,7 @@ const button_public_mint = "Mint Your NFT";
 const mint_failed = "Minting failed. 😢 Please try again.";
 
 
-  abi [
+abi: [
     {
       "inputs": [
         {
@@ -1506,4 +1506,4 @@ const mint_failed = "Minting failed. 😢 Please try again.";
       "type": "function",
       "signature": "0x476343ee"
     }
-  ]
+  ];
