@@ -1,4 +1,4 @@
-const contractAddress = "0x3466f150a62F9af9c1213f47a7bB8C17E58e55bF"; //Replace with your own contract address
+const contractAddress = "0x239a80E0A2ff2157665e83F1D8856090881F467a"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the MingoPack NFT Project!!";
