@@ -11,7 +11,6 @@ const namePrefix = "mingopack.xyz";
 const description = "Mingo Pack are a collection of chubby flamingos. Randomly generated every Mingo is unique.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
-// If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
     growEditionSizeTo: 5555,
@@ -90,7 +89,7 @@ try {
     `${basePath}/build/contract/_contract.json`
   );
   const contractData = JSON.parse(rawContractData);
-  if (contractData.response === "OK" && contractData.error === null) {
+  if (contractData.response === "OK") {
     CONTRACT_ADDRESS = contractData.contract_address;
   }
 } catch (error) {
