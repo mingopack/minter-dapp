@@ -45,8 +45,8 @@ const extraMetadata = {
 
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
-const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby or polygon
+const LIMIT = 10; // Your API key rate limit
+const CHAIN = 'ethereum'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'mingopack.xyz';
@@ -59,10 +59,10 @@ const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Polygon = MATI
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-07-27T15:00:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-09-27T15:00:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-07-26T15:00:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-09-26T15:00:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royaltys address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x52202d2c7345aD57cD0456AD8eAfFE1DA28a360f"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
@@ -76,7 +76,7 @@ const PRESALE_WHITELISTED_ADDRESSES = [
 
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x239a80E0A2ff2157665e83F1D8856090881F467a"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0xfa766de88A2BB3Deb3Afc4Cceb5AE30AB2cb5B70"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
