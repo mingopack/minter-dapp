@@ -1,9 +1,9 @@
 const contractAddress = "0xfa766de88A2BB3Deb3Afc4Cceb5AE30AB2cb5B70"; //Replace with your own contract address
 const chain = 'ethereum'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the MingoPack NFT Project!!";
+const welcome_h1 = "Welcome to the MingoPack NFT Project!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = "Mingopack is an exciting project with tons of utility to come!";
+const welcome_p = "Mingopack is an exciting project with tons of utility to come!!";
 const h1_presale_coming_soon = "Mingo Pack Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
