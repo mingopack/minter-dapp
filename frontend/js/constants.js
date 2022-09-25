@@ -2,14 +2,14 @@ const contractAddress = "0xfa766de88A2BB3Deb3Afc4Cceb5AE30AB2cb5B70"; //Replace 
 const chain = 'ethereum'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the MingoPack NFT Project!";
-const welcome_h2 = "Connect to MetaMask to Get Started";
+const welcome_h2 = "Connect to MetaMask to Get Started!";
 const welcome_p = "Mingopack is an exciting project with tons of utility to come!!";
 const h1_presale_coming_soon = "Mingo Pack Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
 const h2_presale_coming_soon = "Pre-Sale Minting Countdown";
 const h2_presale_mint = "Public Minting Countdown";
-const p_presale_coming_soon = "We are working hard to launch the NFT Collection. Stay tuned for updates!";
+const p_presale_coming_soon = "We are working hard to launch the Collection. Stay tuned for updates!";
 const p_presale_mint_not_whitelisted = "You are not whitelisted for the pre-sale.. 😢";
 const p_presale_mint_whitelisted = "You're on the whitelist for the pre-sale! 🎉";
 const p_presale_mint_already_minted = "You've already claimed your whitelist mint. Thank you! 🎉";
