@@ -51,8 +51,8 @@ const CHAIN = 'ethereum'; // only rinkeby or polygon
 const CONTRACT_NAME = 'mingopack.xyz';
 const CONTRACT_SYMBOL = 'MPK';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = '0x52202d2c7345aD57cD0456AD8eAfFE1DA28a360f';
-const TREASURY_ADDRESS = '0x52202d2c7345aD57cD0456AD8eAfFE1DA28a360f';
+const OWNER_ADDRESS = '0x67A065B2eb20062FE5CBff5bd0c2b43497cf09ED';
+const TREASURY_ADDRESS = '00x67A065B2eb20062FE5CBff5bd0c2b43497cf09ED';
 const MAX_SUPPLY = 5555; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
@@ -63,7 +63,7 @@ const PUBLIC_MINT_START_DATE = "2022-12-03T14:30:48+00:00"; // This is required.
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = "2022-12-02T14:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royaltys address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0x52202d2c7345aD57cD0456AD8eAfFE1DA28a360f"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x67A065B2eb20062FE5CBff5bd0c2b43497cf09ED"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = [
